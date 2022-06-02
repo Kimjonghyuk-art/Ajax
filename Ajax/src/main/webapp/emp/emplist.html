@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>emp 화면</title>
+</head>
+
+<body>
+  <form action="../ajax.do" method="post" name="frm">
+    first_name : <input type="text" name="fname"><br>
+    last_name : <input type="text" name="lname"><br>
+    email : <input type="text" name="email"><br>
+    hire_date : <input type="date" name="hdate"><br>
+    job_id : <input type="text" name="job" value="IT_PROG"><br>
+    <input type="hidden" name="cmd" value="insert">
+    <input type="hidden" name="empId">
+    <input type="submit" value="저장">
+    <input type="reset" value="취소">
+    <input type="button" value="수정" id="modify">
+  </form>
+
+  <h3>사원리스트</h3>
+  <div id="show">
+  	<table border=1>
+  		<thead>
+  			<tr>
+  				<th>사원번호</th>
+  				<th>사원첫이름</th>
+  				<th>사원마지막이름</th>
+  				<th>이메일</th>
+  				<th>입사일자</th>
+  				<th>직무</th>
+  			</tr>
+  		</thead>
+  		
+  		<tbody id="list">
+  			
+  		</tbody>
+  
+  			
+  		</table>
+  
+  </div>
+  
+  <script src="../js/emplist.js"></script>
+  
+</body>
+
+</html>
